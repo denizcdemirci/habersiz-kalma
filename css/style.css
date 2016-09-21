@@ -62,11 +62,6 @@ body:after {
   color: #fff;
 }
 
-.article p.date {
-  font-size: 14px;
-  opacity: .8;
-}
-
 .article p.title,
 .settings p.title {
   font-size: 52px;
@@ -81,7 +76,6 @@ body:after {
 }
 
 .article p.more,
-.article p.refresh,
 .settings p.saved {
   font-size: 12px;
   opacity: .8;
@@ -89,7 +83,7 @@ body:after {
 
 .settings p.saved {
   margin-top: 10px;
-  color: transparent;
+  opacity: 0;
 }
 
 .settings select {
