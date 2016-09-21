@@ -1,18 +1,20 @@
 {
-   "author": "Deniz Çağın Demirci",
-   "chrome_url_overrides": {
-      "newtab": "index.html"
-   },
-   "description": "Açtığınız her yeni sekmede Türkiye gündeminden bir haber ile karşılaşacak, Türkiye gündeminden uzak kalmayacaksınız.",
-   "icons": {
-      "128": "icon128.png",
-      "16": "icon16.png",
-      "48": "icon48.png"
-   },
-   "manifest_version": 2,
-   "name": "Habersiz Kalma",
-   "offline_enabled": true,
-   "permissions": [ "management" ],
-   "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.0"
+  "manifest_version": 2,
+  "name": "Habersiz Kalma",
+  "short_name": "Habersiz Kalma",
+  "description": "Açtığınız her yeni sekmede Türkiye gündeminden bir haber ile karşılaşacak, Türkiye gündeminden uzak kalmayacaksınız.",
+  "author": "Deniz Çağın Demirci",
+  "icons": {
+    "128": "icon128.png",
+    "16": "icon16.png",
+    "48": "icon48.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "options_page": "options.html",
+  "offline_enabled": true,
+  "permissions": ["management", "storage", "http://*.ntv.com.tr/*"],
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "version": "1.0"
 }

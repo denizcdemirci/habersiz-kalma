@@ -1,5 +1,17 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto+Slab:300,400';
 
+*:focus {
+  outline: none;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: #fff;
+}
+
 body {
   min-height: 100vh;
   margin: 0px;
@@ -34,13 +46,15 @@ body:after {
   display: table;
 }
 
-.article {
+.article,
+.settings {
   height: 100%;
   display: table-cell;
   vertical-align: middle;
 }
 
-.article p {
+.article p,
+.settings p {
   margin-top: 0px;
   margin-bottom: 0px;
   font-family: 'Roboto Slab', serif;
@@ -53,23 +67,38 @@ body:after {
   opacity: .8;
 }
 
-.article p.title {
+.article p.title,
+.settings p.title {
   font-size: 52px;
 }
 
-.article p.description {
+.article p.description,
+.settings p.description {
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 18px;
   opacity: .8;
 }
 
-.article p.more {
+.article p.more,
+.article p.refresh,
+.settings p.saved {
+  font-size: 12px;
   opacity: .8;
 }
 
-.article p.more a {
-  font-size: 12px;
+.settings p.saved {
+  margin-top: 10px;
+  color: transparent;
+}
+
+.settings select {
+  width: 100%;
+  padding: 6px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 18px;
   color: #fff;
-  text-decoration: none;
+  background-color: #222;
+  border: none;
 }
