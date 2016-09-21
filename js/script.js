@@ -1,7 +1,8 @@
 (function() {
-  var articles = [];
-  $.get("http://www.ntv.com.tr/turkiye.rss", function(data) {
 
+  var articles = [];
+
+  $.get("http://www.ntv.com.tr/turkiye.rss", function(data) {
   }).done(function(data) {
     var $xml = $(data);
     $xml.find("entry").each(function() {
@@ -19,11 +20,12 @@
         link: item.link
       });
     });
-    article();
+    articleDone();
   }).fail(function() {
-    // failure 
+    articleFail();
   });
-  function article() {
+
+  function articleDone() {
     var article = articles[Math.floor(Math.random() * articles.length)];
     var monthNames = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"];
     var date = new Date();
@@ -36,4 +38,13 @@
     '<p class="more"><a href=' + article.link + '>Bu haberin devamını okumak istiyorum</a></p>';
     document.body.style.backgroundImage = 'url('+ articleImage[1] +')';
   }
+
+  function articleFail() {
+    document.getElementById("article").innerHTML =
+    '<p class="title" style="opacity: .8">Haberler güncellenemedi</p>' +
+    '<p class="description">Haberler güncellenirken bir sorunla karşılaşıldı ve güncel haberler alınamadı. Bu sorun internet bağlantınız veya haber sitesindeki yoğunluk nedeniyle olabilir.</p>' +
+    '<p class="more"><a href="#">Haberleri güncellemeyi tekrar dene</a></p>';
+    document.body.style.backgroundImage = 'url("img/gezi.jpg")';
+  }
+
 })();
