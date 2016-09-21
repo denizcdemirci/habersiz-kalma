@@ -1,0 +1,18 @@
+{
+   "author": "Deniz Çağın Demirci",
+   "chrome_url_overrides": {
+      "newtab": "index.html"
+   },
+   "description": "Açtığınız her yeni sekmede Türkiye gündeminden bir haber ile karşılaşacak, Türkiye gündeminden uzak kalmayacaksınız.",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "manifest_version": 2,
+   "name": "Habersiz Kalma",
+   "offline_enabled": true,
+   "permissions": [ "management" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0"
+}
