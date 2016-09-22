@@ -5,16 +5,12 @@ var image = images[Math.floor(Math.random() * images.length)];
 $('body').css('background-image', 'url("img/' + image + '.jpg")');
 
 if (typeof articleSubject == 'undefined') {
+  articleSubject = "turkiye";
   localStorage.articleSubject = 'turkiye';
 }
 
-$('#subject').change(function() {
-  var saveSubject = $(this).val();
-  localStorage.articleSubject = saveSubject;
-  $('.saved').css('opacity', '.8');
-  setTimeout(function() {
-    $('.saved').css('opacity', '0');
-  }, 1000);
+$('.subject').change(function() {
+  localStorage.articleSubject = $(".settings input[name=subject-radio]:checked").val();
 });
 
-$('.settings option[value=' + articleSubject + ']').prop('selected', 'selected');
+$('.settings input[name=subject-radio][value=' + articleSubject + ']').prop('checked', true);

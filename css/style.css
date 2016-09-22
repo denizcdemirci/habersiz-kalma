@@ -74,26 +74,56 @@ body:after {
   opacity: .8;
 }
 
-.article p.more,
-.settings p.saved {
+.article p.more {
   margin-top: 20px;
   font-size: 12px;
   opacity: .8;
 }
 
-.settings p.saved {
-  margin-top: 10px;
-  opacity: 0;
-}
-
-.settings select {
+.settings form {
   width: 100%;
   margin-top: 20px;
-  padding: 6px;
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
   font-size: 18px;
   color: #fff;
-  background-color: #222;
-  border: none;
+  opacity: .8;
+}
+
+.settings input[type="radio"] {
+  display: none;
+}
+
+.settings input[type="radio"] + label {
+  margin-right: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.settings input[type="radio"] + label span {
+  width: 18px;
+  height: 18px;
+  margin: -4px 3px 0px 0px;
+  display: inline-block;
+  vertical-align: middle;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: .8;
+}
+
+.settings input[type="radio"] + label span {
+  background-color: #9e9e9e;
+}
+
+.settings input[type="radio"]:checked + label span{
+  background-color: #4caf50;
+}
+
+.settings input[type="radio"] + label span,
+.settings input[type="radio"]:checked + label span {
+  -webkit-transition: background-color 0.1s linear;
+  -o-transition: background-color 0.1s linear;
+  -moz-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear;
 }

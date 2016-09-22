@@ -8,17 +8,28 @@
   <body>
     <div class="container">
       <div class="settings">
-        <p class="title">Haber Seçenekleri</p>
-        <p class="description">Bu uygulamanın asıl amacı Türkiye gündemindeki haberleri öğrenebilmeniz. Gündem konusunu değiştirmenizi <u>önermiyoruz</u>, ancak sürekli Türkiye gündemindeki aynı haberlerden sıkıldıysanız bir değişiklik yapıp diğer konuları deneyebilirsiniz.</p>
-        <select id="subject" name="subject">
-          <option value="turkiye" selected>Türkiye</option>
-          <option value="dunya">Dünya</option>
-          <option value="gundem">Gündem</option>
-          <option value="ekonomi">Ekonomi</option>
-          <option value="spor">Spor</option>
-          <option value="teknoloji">Teknoloji</option>
-        </select>
-        <p class="saved">Değişiklikler kaydedildi</p>
+        <p class="title" style="opacity: .8">Haber Seçenekleri</p>
+        <p class="description">Bu uygulamanın asıl amacı Türkiye gündemindeki haberleri öğrenebilmeniz. Gündem konusunu değiştirmenizi <u>önermiyoruz</u>, ama sürekli Türkiye gündemindeki aynı haberlerden sıkıldıysanız bir değişiklik yapıp diğer konuları deneyebilirsiniz.</p>
+        <form class="subject">
+          <input type="radio" id="gundem" name="subject-radio" value="gundem">
+          <label for="gundem"><span></span>Öne Çıkanlar</label>
+          <input type="radio" id="turkiye" name="subject-radio" value="turkiye">
+          <label for="turkiye"><span></span>Türkiye</label>
+          <input type="radio" id="dunya" name="subject-radio" value="dunya">
+          <label for="dunya"><span></span>Dünya</label>
+          <input type="radio" id="spor" name="subject-radio" value="spor">
+          <label for="spor"><span></span>Spor</label>
+          <input type="radio" id="ekonomi" name="subject-radio" value="ekonomi">
+          <label for="ekonomi"><span></span>Ekonomi</label>
+          <input type="radio" id="teknoloji" name="subject-radio" value="teknoloji">
+          <label for="teknoloji"><span></span>Teknoloji</label>
+          <input type="radio" id="sanat" name="subject-radio" value="sanat">
+          <label for="sanat"><span></span>Sanat</label>
+          <input type="radio" id="saglik" name="subject-radio" value="saglik">
+          <label for="saglik"><span></span>Sağlık</label>
+          <input type="radio" id="yasam" name="subject-radio" value="yasam">
+          <label for="yasam"><span></span>Yaşam</label>
+        </form>
       </div>
     </div>
     <script src="js/jquery.min.js"></script>

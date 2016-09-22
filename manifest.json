@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Habersiz Kalma",
   "short_name": "Habersiz Kalma",
-  "description": "Açtığınız her yeni sekmede Türkiye gündeminden bir haber ile karşılaşacak, Türkiye gündeminden uzak kalmayacaksınız.",
+  "description": "Açtığınız her sekmede yeni bir haber ile karşılaşacak, Türkiye gündeminden habersiz kalmayacaksınız.",
   "author": "Deniz Çağın Demirci",
   "icons": {
     "128": "icon128.png",
@@ -13,8 +13,7 @@
     "newtab": "index.html"
   },
   "options_page": "options.html",
-  "offline_enabled": true,
   "permissions": ["management", "storage", "http://*.ntv.com.tr/*"],
   "update_url": "https://clients2.google.com/service/update2/crx",
-  "version": "1.0"
+  "version": "1.1"
 }

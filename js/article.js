@@ -3,6 +3,7 @@ var articleSubject = localStorage.articleSubject;
 var images = ['anitkabir', 'bogazici', 'gezi', 'istanbul', 'kizkulesi', 'saatkulesi'];
 
 if (typeof articleSubject == 'undefined') {
+  articleSubject = "turkiye";
   localStorage.articleSubject = 'turkiye';
 }
 
@@ -45,5 +46,5 @@ function articleFail() {
   $('body').css('background-image', 'url("img/' + image + '.jpg")');
   $('.title').css('opacity', '.8').html('Haberler güncellenemedi');
   $('.description').html('Haberler güncellenirken bir sorunla karşılaşıldı ve güncel haberler alınamadı. Bu sorun internet bağlantınız veya haber sitesindeki yoğunluk nedeniyle olabilir.');
-  $('.more').html('<a href="#">Haberleri güncellemeyi tekrar dene</a>');
+  $('.more').hide();
 }
