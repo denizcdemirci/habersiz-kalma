@@ -1,6 +1,6 @@
 var articles = [];
 var articleSubject = localStorage.articleSubject;
-var images = ['gezi', 'bogazici'];
+var images = ['anitkabir', 'bogazici', 'gezi', 'istanbul', 'kizkulesi', 'saatkulesi'];
 
 if (typeof articleSubject == 'undefined') {
   localStorage.articleSubject = 'turkiye';
@@ -37,7 +37,6 @@ function articleDone() {
   $('.more').html('<a href=' + article.link + '>Bu haberin devamını okumak istiyorum</a>');
   if (article.description == '') {
     $('.description').hide();
-    $('.more').css('margin-top', '20px');
   }
 }
 

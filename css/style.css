@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto+Slab:300,400';
+@import 'https://fonts.googleapis.com/css?family=Roboto+Slab';
 
 *:focus {
   outline: none;
@@ -70,13 +70,13 @@ body:after {
 .article p.description,
 .settings p.description {
   margin-top: 20px;
-  margin-bottom: 20px;
   font-size: 18px;
   opacity: .8;
 }
 
 .article p.more,
 .settings p.saved {
+  margin-top: 20px;
   font-size: 12px;
   opacity: .8;
 }
@@ -88,6 +88,7 @@ body:after {
 
 .settings select {
   width: 100%;
+  margin-top: 20px;
   padding: 6px;
   font-family: 'Roboto Slab', serif;
   font-weight: 400;

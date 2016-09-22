@@ -1,5 +1,5 @@
 var articleSubject = localStorage.articleSubject;
-var images = ['gezi', 'bogazici'];
+var images = ['anitkabir', 'bogazici', 'gezi', 'istanbul', 'kizkulesi', 'saatkulesi'];
 
 var image = images[Math.floor(Math.random() * images.length)];
 $('body').css('background-image', 'url("img/' + image + '.jpg")');
