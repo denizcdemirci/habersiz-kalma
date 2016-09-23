@@ -4,8 +4,8 @@ var images = ['anitkabir', 'bogazici', 'gezi', 'istanbul', 'kizkulesi', 'saatkul
 var image = images[Math.floor(Math.random() * images.length)];
 $('body').css('background-image', 'url("img/' + image + '.jpg")');
 
-if (typeof articleSubject == 'undefined') {
-  articleSubject = "turkiye";
+if (typeof articleSubject == 'undefined' || articleSubject == 'null') {
+  articleSubject = 'turkiye';
   localStorage.articleSubject = 'turkiye';
 }
 

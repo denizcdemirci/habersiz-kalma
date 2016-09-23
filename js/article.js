@@ -2,8 +2,8 @@ var articles = [];
 var articleSubject = localStorage.articleSubject;
 var images = ['anitkabir', 'bogazici', 'gezi', 'istanbul', 'kizkulesi', 'saatkulesi'];
 
-if (typeof articleSubject == 'undefined') {
-  articleSubject = "turkiye";
+if (typeof articleSubject == 'undefined' || articleSubject == 'null') {
+  articleSubject = 'turkiye';
   localStorage.articleSubject = 'turkiye';
 }
 

@@ -80,6 +80,14 @@ body:after {
   opacity: .8;
 }
 
+.settings .line {
+  width: 160px;
+  height: 1px;
+  margin-top: 20px;
+  background-color: #fff;
+  opacity: .8;
+}
+
 .settings form {
   width: 100%;
   margin-top: 20px;
@@ -90,17 +98,31 @@ body:after {
   opacity: .8;
 }
 
-.settings input[type="radio"] {
+.settings input[type='checkbox'],
+.settings input[type='radio'] {
   display: none;
 }
 
-.settings input[type="radio"] + label {
+.settings input[type='checkbox'] + label,
+.settings input[type='radio'] + label {
   margin-right: 4px;
   font-size: 14px;
   cursor: pointer;
 }
 
-.settings input[type="radio"] + label span {
+.settings input[type='checkbox'] + label span {
+  width: 18px;
+  height: 18px;
+  margin: -4px 3px 0px 0px;
+  display: inline-block;
+  vertical-align: middle;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  cursor: pointer;
+  opacity: .8;
+}
+
+.settings input[type='radio'] + label span {
   width: 18px;
   height: 18px;
   margin: -4px 3px 0px 0px;
@@ -112,16 +134,20 @@ body:after {
   opacity: .8;
 }
 
-.settings input[type="radio"] + label span {
+.settings input[type='checkbox'] + label span,
+.settings input[type='radio'] + label span {
   background-color: #9e9e9e;
 }
 
-.settings input[type="radio"]:checked + label span{
+.settings input[type='checkbox']:checked + label span,
+.settings input[type='radio']:checked + label span {
   background-color: #4caf50;
 }
 
-.settings input[type="radio"] + label span,
-.settings input[type="radio"]:checked + label span {
+.settings input[type='checkbox'] + label span,
+.settings input[type='checkbox']:checked + label span,
+.settings input[type='radio'] + label span,
+.settings input[type='radio']:checked + label span {
   -webkit-transition: background-color 0.1s linear;
   -o-transition: background-color 0.1s linear;
   -moz-transition: background-color 0.1s linear;
