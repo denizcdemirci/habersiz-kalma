@@ -1,5 +1,6 @@
 var articles = [];
 var articleSubject = localStorage.articleSubject;
+var articleImage = localStorage.articleImage;
 var images = ['anitkabir', 'bogazici', 'gezi', 'istanbul', 'kizkulesi', 'saatkulesi'];
 
 if (typeof articleSubject == 'undefined' || articleSubject == 'null') {
@@ -32,7 +33,12 @@ $.get('http://www.ntv.com.tr/' + articleSubject + '.rss', function(data) {
 function articleDone() {
   var article = articles[Math.floor(Math.random() * articles.length)];
   var regExp = /\ src="(.*?)\?width/;
-  $('body').css('background-image', 'url(' + regExp.exec(article.image)[1] + ')');
+  if (articleImage == 'low') {
+    $('body').css('background-image', 'url(' + regExp.exec(article.image)[1] + '?width=600)');
+  }
+  else {
+    $('body').css('background-image', 'url(' + regExp.exec(article.image)[1] + ')');
+  }
   $('.title').html(article.title);
   $('.description').html(article.description);
   $('.more').html('<a href=' + article.link + '>Bu haberin devamını okumak istiyorum</a>');

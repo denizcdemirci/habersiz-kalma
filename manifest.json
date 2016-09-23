@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Habersiz Kalma",
   "short_name": "Habersiz Kalma",
-  "version": "1.1",
+  "version": "1.2",
   "current_locale": "tr",
   "description": "Açtığınız her sekmede yeni bir haber ile karşılaşacak, Türkiye gündeminden habersiz kalmayacaksınız.",
   "author": "Deniz Çağın Demirci",

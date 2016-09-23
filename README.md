@@ -4,6 +4,8 @@ Açtığınız her sekmede yeni bir haber ile karşılaşacak, Türkiye gündemi
 
 Uygulamayı buradan indirebilirsiniz: https://chrome.google.com/webstore/detail/habersiz-kalma/ojlmnblnndgpdmggodkenhcoioeachie?hl=tr
 
+Uygulamanın sitesi: http://denizcag.in/habersiz-kalma/
+
 ![Uygulama Görüntüsü](http://i.imgur.com/W8a40JE.png)
 
 Bu uygulamanın asıl amacı Türkiye gündemindeki haberleri öğrenebilmeniz. Sürekli Türkiye gündemindeki aynı haberlerden sıkıldıysanız uygulama ayarlarından farklı haber konularını da seçebilirsiniz.
@@ -11,23 +13,25 @@ Bu uygulamanın asıl amacı Türkiye gündemindeki haberleri öğrenebilmeniz. 
 
 ### Yapılacaklar
 
-* Haber resimlerinin boyutunu azaltabilme seçeneği
+* Slider şeklinde haberler
 * Birden fazla haber kategorisi seçebilme
-* Başka haber sitelerinden haber alma
+* Başka haber sitelerinden haberler
 
 
 ### Güncelleme Geçmişi
 
+* **1.2**
+  * Haber resimlerinin boyutunu azaltabilme seçeneği eklendi
 * **1.1**
-  * Ayarlar sayfası geliştirildi.
-  * Küçük hatalar giderildi.
+  * Ayarlar sayfası geliştirildi
+  * Küçük hatalar giderildi
 * **1.0**
-  * İlk sürüm yayınlandı.
+  * İlk sürüm yayınlandı
 
 
 ### Lisans
 
-Habersiz Kalma MIT lisansı altında dağıtılmaktadır. Lisans içeriğini `LICENSE` içerisinde bulabilirsiniz. MIT lisansı şartları altında istediğiniz gibi değiştirebilir ve dağıtabilirsiniz.
+Habersiz Kalma uygulaması MIT lisansı altında dağıtılmaktadır. Lisans içeriğini `LICENSE` içerisinde bulabilirsiniz.
 
 
 ### Yazar
