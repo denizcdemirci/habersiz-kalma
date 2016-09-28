@@ -20,6 +20,8 @@ Bu uygulama ile açtığınız her yeni sekmede karşınıza Türkiye gündemind
 
 ### Güncelleme Geçmişi
 
+* **1.3.1**
+  * Hızlı ayarlar için küçük düzenlemeler
 * **1.3**
   * Hızlı ayarlar eklendi. Artık uygulama ikonuna tıklayarak haber kategorilerini değiştirebilirsiniz (ilk olarak ayarlardan aktif etmeniz gerekir)
 * **1.2**
