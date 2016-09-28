@@ -2,13 +2,13 @@
 
 Açtığınız her sekmede yeni bir haber ile karşılaşacak, Türkiye gündeminden habersiz kalmayacaksınız.
 
-Uygulamayı buradan indirebilirsiniz: https://chrome.google.com/webstore/detail/habersiz-kalma/ojlmnblnndgpdmggodkenhcoioeachie?hl=tr
+Uygulamayı buradan indirebilirsiniz: https://chrome.google.com/webstore/detail/habersiz-kalma/ojlmnblnndgpdmggodkenhcoioeachie
 
 Uygulamanın sitesi: http://denizcag.in/habersiz-kalma/
 
 ![Uygulama Görüntüsü](http://i.imgur.com/W8a40JE.png)
 
-Bu uygulamanın asıl amacı Türkiye gündemindeki haberleri öğrenebilmeniz. Sürekli Türkiye gündemindeki aynı haberlerden sıkıldıysanız uygulama ayarlarından farklı haber konularını da seçebilirsiniz.
+Bu uygulama ile açtığınız her yeni sekmede karşınıza Türkiye gündeminden haberler gelecek ve sizde Habersiz Kalmayacaksınız. Dilerseniz Türkiye gündeminin yanı sıra, Dünya, Spor, Ekonomi, Teknoloji, Sanat, Sağlık ve Yaşam gibi başlıklardan da haber güncellemeleri alabilirsiniz.
 
 
 ### Yapılacaklar
@@ -20,10 +20,12 @@ Bu uygulamanın asıl amacı Türkiye gündemindeki haberleri öğrenebilmeniz. 
 
 ### Güncelleme Geçmişi
 
+* **1.3**
+  * Hızlı ayarlar eklendi. Artık uygulama ikonuna tıklayarak haber kategorilerini değiştirebilirsiniz (ilk olarak ayarlardan aktif etmeniz gerekir)
 * **1.2**
-  * Haber resimlerinin boyutunu azaltabilme seçeneği eklendi
+  * Düşük internet hızına sahip kullanıcılar için haber görsellerinin kalitesini azaltabilme seçeneği eklendi
 * **1.1**
-  * Ayarlar sayfası geliştirildi
+  * Ayarlar sayfasındaki seçenekler değiştirildi
   * Küçük hatalar giderildi
 * **1.0**
   * İlk sürüm yayınlandı

@@ -1,6 +1,8 @@
 var articleSubject = localStorage.articleSubject;
 var articleImage = localStorage.articleImage;
 var articleImageSetting = '';
+var quickSetting = localStorage.quickSetting;
+var quickSettingSetting = '';
 var images = ['anitkabir', 'bogazici', 'gezi', 'istanbul', 'kizkulesi', 'saatkulesi'];
 
 var image = images[Math.floor(Math.random() * images.length)];
@@ -16,6 +18,33 @@ $('.subject').change(function() {
 });
 
 $('.settings input[name=subjectChoice][value=' + articleSubject + ']').prop('checked', true);
+
+if (typeof quickSetting == 'undefined' || quickSetting == 'null') {
+  quickSetting = false;
+  localStorage.quickSetting = false;
+}
+
+if (quickSettingSetting == '') {
+  quickSettingSetting = localStorage.quickSetting;
+}
+
+$('.quickSetting').change(function() {
+  if (quickSettingSetting == false) {
+    quickSettingSetting = true;
+    localStorage.quickSetting = true;
+  }
+  else {
+    quickSettingSetting = false;
+    localStorage.quickSetting = false;
+  }
+});
+
+if (quickSetting == false) {
+  $('.settings input[name=quickSetting]').prop('checked', false);
+}
+else {
+  $('.settings input[name=quickSetting]').prop('checked', true);
+}
 
 if (typeof articleImage == 'undefined' || articleImage == 'null') {
   articleImage = 'high';
