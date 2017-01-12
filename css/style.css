@@ -1,7 +1,11 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto+Slab';
+@font-face {
+  font-family: 'robotoslab-regular';
+  src: url('robotoslab-regular.woff2') format('woff2'), url('robotoslab-regular.woff') format('woff');
+}
 
-*:focus {
-  outline: none;
+@font-face {
+  font-family: 'robotoslab-light';
+  src: url('robotoslab-light.woff2') format('woff2'), url('robotoslab-light.woff') format('woff');
 }
 
 a,
@@ -13,16 +17,12 @@ a:active {
 }
 
 body {
-  min-height: 100vh;
-  margin: 0px;
+  margin: 0;
   background: #222;
-  background-image: url('');
+  background-image: url('../img/background.png');
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 
@@ -31,8 +31,7 @@ body:after {
   height: 100%;
   width: 100%;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
   background: #222;
   opacity: .8;
   z-index: -1;
@@ -47,28 +46,28 @@ body:after {
 }
 
 .article,
-.settings {
+.options {
   height: 100%;
   display: table-cell;
   vertical-align: middle;
 }
 
 .article p,
-.settings p {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-family: 'Roboto Slab', serif;
+.options p {
+  margin: 0;
+  font-family: 'robotoslab-regular', serif;
   font-weight: 400;
   color: #fff;
 }
 
 .article p.title,
-.settings p.title {
+.options p.title {
   font-size: 52px;
+  line-height: 60px;
 }
 
 .article p.description,
-.settings p.description {
+.options p.description {
   margin-top: 20px;
   font-size: 18px;
   opacity: .8;
@@ -76,80 +75,60 @@ body:after {
 
 .article p.more {
   margin-top: 20px;
+  font-family: 'robotoslab-light';
   font-size: 12px;
   opacity: .8;
 }
 
-.settings .line {
-  width: 160px;
-  height: 1px;
+.options .group {
   margin-top: 20px;
-  background-color: #fff;
-  opacity: .8;
+  clear: both;
 }
 
-.settings form {
-  width: 100%;
-  margin-top: 20px;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 400;
-  font-size: 18px;
-  color: #fff;
-  opacity: .8;
+.options .group img {
+  width: 60px;
+  height: 28px;
 }
 
-.settings input[type='checkbox'],
-.settings input[type='radio'] {
+.options .group .logo {
+  margin-right: 10px;
+  float: left;
+}
+
+.options input[type="radio"] {
   display: none;
 }
 
-.settings input[type='checkbox'] + label,
-.settings input[type='radio'] + label {
-  margin-right: 4px;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.settings input[type='checkbox'] + label span {
-  width: 18px;
-  height: 18px;
-  margin: -4px 3px 0px 0px;
+.options label {
+  margin-left: 4px;
+  padding: 6px;
   display: inline-block;
-  vertical-align: middle;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
+  background-color: #fff;
+  font-family: 'robotoslab-regular', serif;
+  color: #222;
+  text-align: center;
   cursor: pointer;
+  transition: all 100ms ease-out;
   opacity: .8;
 }
 
-.settings input[type='radio'] + label span {
-  width: 18px;
-  height: 18px;
-  margin: -4px 3px 0px 0px;
-  display: inline-block;
-  vertical-align: middle;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  cursor: pointer;
-  opacity: .8;
+.options label:hover {
+  opacity: 1;
 }
 
-.settings input[type='checkbox'] + label span,
-.settings input[type='radio'] + label span {
-  background-color: #9e9e9e;
+.options input[type="radio"]:checked + label {
+  color: #fff;
+  background-color: #388e3c;
+  opacity: 1;
 }
 
-.settings input[type='checkbox']:checked + label span,
-.settings input[type='radio']:checked + label span {
-  background-color: #4caf50;
+.options-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
-.settings input[type='checkbox'] + label span,
-.settings input[type='checkbox']:checked + label span,
-.settings input[type='radio'] + label span,
-.settings input[type='radio']:checked + label span {
-  -webkit-transition: background-color 0.1s linear;
-  -o-transition: background-color 0.1s linear;
-  -moz-transition: background-color 0.1s linear;
-  transition: background-color 0.1s linear;
+.options-button img {
+  width: 20px;
+  height: 20px;
 }

@@ -2,42 +2,42 @@
 
 Açtığınız her sekmede yeni bir haber ile karşılaşacak, Türkiye gündeminden habersiz kalmayacaksınız.
 
-Uygulamayı buradan indirebilirsiniz: https://chrome.google.com/webstore/detail/habersiz-kalma/ojlmnblnndgpdmggodkenhcoioeachie
+Eklentiyi Chrome Web Store'dan indirebilirsiniz: https://chrome.google.com/webstore/detail/habersiz-kalma/ojlmnblnndgpdmggodkenhcoioeachie
 
-Uygulamanın sitesi: http://denizcag.in/habersiz-kalma/
+Eklentinin demosu: http://denizcag.in/habersiz-kalma/
 
-![Uygulama Görüntüsü](http://i.imgur.com/W8a40JE.png)
+![Eklentiden Görüntü](http://i.imgur.com/W8a40JE.png)
 
-Bu uygulama ile açtığınız her yeni sekmede karşınıza Türkiye gündeminden haberler gelecek ve sizde Habersiz Kalmayacaksınız. Dilerseniz Türkiye gündeminin yanı sıra, Dünya, Spor, Ekonomi, Teknoloji, Sanat, Sağlık ve Yaşam gibi başlıklardan da haber güncellemeleri alabilirsiniz.
-
-
-### Yapılacaklar
-
-* Slider şeklinde haberler
-* Birden fazla haber kategorisi seçebilme
-* Başka haber sitelerinden haberler
+Bu eklenti ile açtığınız her yeni sekmede karşınıza seçtiğiniz haber kaynağından haberler gelecek ve sizde Habersiz kalmayacaksınız. Hurriyet, NTV, CNN Türk ve BBC Türkçe gibi haber sitelerinden Türkiye gündemi, Dünya, Spor, Ekonomi, Teknoloji, Sanat, Sağlık ve Yaşam gibi başlıklardan haber güncellemeleri alabilirsiniz.
 
 
 ### Güncelleme Geçmişi
 
+* **2.0**
+  * Eklenti tekrardan tasarlandı.
+  * Haber gösterilen sayfaya seçenekler tuşu eklendi.
+  * Haberler her sekmeyi açtığnızda değil, 30 dakikada bir güncelleniyor.
+  * Haber kaynağını değiştirme seçenekleri eklendi.
+  * Çalışmayan seçenekler (eklenti ikonuna tıklayarak haber kategorisi değiştirme) kaldırıldı.
+  * Diğer küçük düzenlemeler.
 * **1.3.1**
-  * Hızlı ayarlar için küçük düzenlemeler
+  * Hızlı ayarlar için küçük düzenlemeler yapıldı.
 * **1.3**
-  * Hızlı ayarlar eklendi. Artık uygulama ikonuna tıklayarak haber kategorilerini değiştirebilirsiniz (ilk olarak ayarlardan aktif etmeniz gerekir)
+  * Hızlı ayarlar eklendi. Artık eklenti ikonuna tıklayarak haber kategorilerini değiştirebilirsiniz. (ilk olarak ayarlardan aktif etmeniz gerekir)
 * **1.2**
-  * Düşük internet hızına sahip kullanıcılar için haber görsellerinin kalitesini azaltabilme seçeneği eklendi
+  * Düşük internet hızına sahip kullanıcılar için haber görsellerinin kalitesini azaltabilme seçeneği eklendi.
 * **1.1**
-  * Ayarlar sayfasındaki seçenekler değiştirildi
-  * Küçük hatalar giderildi
+  * Ayarlar sayfasındaki seçenekler değiştirildi.
+  * Küçük hatalar giderildi.
 * **1.0**
-  * İlk sürüm yayınlandı
+  * İlk sürüm yayınlandı.
 
 
 ### Lisans
 
-Habersiz Kalma uygulaması MIT lisansı altında dağıtılmaktadır. Lisans içeriğini `LICENSE` içerisinde bulabilirsiniz.
+Habersiz Kalma eklentisi MIT lisansı altında dağıtılmaktadır. Lisans içeriğini `LICENSE` içerisinde bulabilirsiniz.
 
 
 ### Yazar
 
-Copyright (C) 2016  Deniz Çağın Demirci  <denizcdemirci@gmail.com>
+Copyright (C) 2017 Deniz Çağın Demirci <merhaba@denizcag.in>

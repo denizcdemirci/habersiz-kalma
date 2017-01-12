@@ -1,69 +1,11 @@
-var articleSubject = localStorage.articleSubject;
-var articleImage = localStorage.articleImage;
-var articleImageSetting = '';
-var quickSetting = localStorage.quickSetting;
-var images = ['anitkabir', 'bogazici', 'gezi', 'istanbul', 'kizkulesi', 'saatkulesi'];
-
-var image = images[Math.floor(Math.random() * images.length)];
-$('body').css('background-image', 'url("img/' + image + '.jpg")');
-
-if (typeof articleSubject == 'undefined' || articleSubject == 'null') {
-  localStorage.articleSubject = 'turkiye';
-}
-
-$('.subject').change(function() {
-  localStorage.articleSubject = $('.settings input[name=subjectChoice]:checked').val();
-  if (quickSetting == 'true') {
-    chrome.browserAction.setIcon({
-      path: 'img/' + $('.settings input[name=subjectChoice]:checked').val() + '.png'
-    });
+var h = [['hur','gundem','Gündem'],['hur','dunya','Dünya'],['hur','ekonomi','Ekonomi'],['hur','spor','Spor'],['hur','saglik','Sağlık'],['hur','teknoloji','Teknoloji'],['hur','magazin','Magazin'],['hur','astroloji','Astroloji'],['ntv','gundem','Gündem'],['ntv','turkiye','Türkiye'],['ntv','dunya','Dünya'],['ntv','ekonomi','Ekonomi'],['ntv','spor','Spor'],['ntv','yasam','Yaşam'],['ntv','saglik','Sağlık'],['ntv','teknoloji','Teknoloji'],['ntv','emlak','Emlak'],['ntv','sanat','Sanat'],['ntv','egitim','Eğitim'],['cnn','all','Gündem'],['cnn','turkiye','Türkiye'],['cnn','dunya','Dünya'],['cnn','ekonomi','Ekonomi'],['cnn','spor','Spor'],['cnn','yasam','Yaşam'],['cnn','saglik','Sağlık'],['cnn','bilim-teknoloji','Bilim Teknoloji'],['cnn','magazin','Magazin'],['cnn','kultur-sanat','Kültür Sanat'],['bbc','turkce','Türkçe']];
+$.each(h, function(i, v) {
+  $('.' + v[0]).append('<input type="radio" name="options" id=' + i + ' value="' + v[0] + '#' + v[1] + '"><label for=' + i + '>' + v[2] + '</label>');
+});
+$('input[value="' + localStorage.options + '"]').prop('checked', true);
+$('input').click(function() {
+  if ($(this).is(':checked')) {
+    localStorage.options = $(this).val();
+    getNews();
   }
 });
-
-$('.settings input[name=subjectChoice][value=' + articleSubject + ']').prop('checked', true);
-
-if (typeof quickSetting == 'undefined' || quickSetting == 'null') {
-  localStorage.quickSetting = 'false';
-}
-
-$('.quickSetting').change(function() {
-  if (localStorage.quickSetting == 'false') {
-    localStorage.quickSetting = 'true';
-  }
-  else {
-    localStorage.quickSetting  = 'false';
-  }
-});
-
-if (quickSetting == 'false') {
-  $('.settings input[name=quickSetting]').prop('checked', false);
-}
-else {
-  $('.settings input[name=quickSetting]').prop('checked', true);
-}
-
-if (typeof articleImage == 'undefined' || articleImage == 'null') {
-  localStorage.articleImage = 'high';
-}
-
-if (articleImageSetting == '') {
-  articleImageSetting = localStorage.articleImage;
-}
-
-$('.image').change(function() {
-  if (articleImageSetting == 'high') {
-    articleImageSetting = 'low';
-    localStorage.articleImage = 'low';
-  }
-  else {
-    articleImageSetting = 'high';
-    localStorage.articleImage = 'high';
-  }
-});
-
-if (articleImage == 'high') {
-  $('.settings input[name=imageQuality]').prop('checked', true);
-}
-else {
-  $('.settings input[name=imageQuality]').prop('checked', false);
-}

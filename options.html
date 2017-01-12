@@ -2,47 +2,50 @@
 <html lang="tr">
   <head>
     <meta charset="UTF-8">
-    <title>Habersiz Kalma - Haber Seçenekleri</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Habersiz Kalma: Seçenekler</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="container">
-      <div class="settings">
-        <p class="title" style="opacity: .8">Haber Seçenekleri</p>
-        <p class="description">Uygulamamızın amacı Türkiye gündeminden habersiz kalmamak. Bu yüzden gündem konusunu değiştirmenizi <u>önermiyoruz</u>. Fakat isteğinize göre aşağıdaki başlıklardan tercih ettiğiniz gündemi, haber güncellemesi olarak alabilirsiniz.</p>
-        <form class="subject">
-          <input type="radio" id="gundem" name="subjectChoice" value="gundem">
-          <label for="gundem"><span></span>Öne Çıkanlar</label>
-          <input type="radio" id="turkiye" name="subjectChoice" value="turkiye">
-          <label for="turkiye"><span></span>Türkiye</label>
-          <input type="radio" id="dunya" name="subjectChoice" value="dunya">
-          <label for="dunya"><span></span>Dünya</label>
-          <input type="radio" id="spor" name="subjectChoice" value="spor">
-          <label for="spor"><span></span>Spor</label>
-          <input type="radio" id="ekonomi" name="subjectChoice" value="ekonomi">
-          <label for="ekonomi"><span></span>Ekonomi</label>
-          <input type="radio" id="teknoloji" name="subjectChoice" value="teknoloji">
-          <label for="teknoloji"><span></span>Teknoloji</label>
-          <input type="radio" id="sanat" name="subjectChoice" value="sanat">
-          <label for="sanat"><span></span>Sanat</label>
-          <input type="radio" id="saglik" name="subjectChoice" value="saglik">
-          <label for="saglik"><span></span>Sağlık</label>
-          <input type="radio" id="yasam" name="subjectChoice" value="yasam">
-          <label for="yasam"><span></span>Yaşam</label>
-        </form>
-        <form class="quickSetting">
-          <input type="checkbox" id="quickSetting" name="quickSetting">
-          <label for="quickSetting"><span></span>Uygulama ikonuna tıklayarak haber kategorisini değiştirebilmeyi aktif et (test aşamasında)</label>
-        </form>
-        <div class="line"></div>
-        <p class="description">İnternet kaliteniz kötüyse haber görselinin kalitesini düşürebilirsiniz.</p>
-        <form class="image">
-          <input type="checkbox" id="imageQuality" name="imageQuality">
-          <label for="imageQuality"><span></span>Haber görselleri yüksek kalitede yüklensin</label>
-        </form>
+      <div class="options">
+        <p class="title">Haber Kaynağı</p>
+        <p class="description">En yakın zamanda başka haber kaynakları da ekleyeceğiz.</p>
+        <div class="group">
+          <div class="logo">
+            <a href="http://www.hurriyet.com.tr" target="_blank">
+              <img src="img/hurriyet.png">
+            </a>
+          </div>
+          <div class="hur"></div>
+        </div>
+        <div class="group">
+          <div class="logo">
+            <a href="http://www.ntv.com.tr" target="_blank">
+              <img src="img/ntv.png">
+            </a>
+          </div>
+          <div class="ntv"></div>
+        </div>
+        <div class="group">
+          <div class="logo">
+            <a href="http://www.cnnturk.com" target="_blank">
+              <img src="img/cnn.png">
+            </a>
+          </div>
+          <div class="cnn"></div>
+        </div>
+        <div class="group">
+          <div class="logo">
+            <a href="http://www.bbc.com/turkce" target="_blank">
+              <img src="img/bbc.png">
+            </a>
+          </div>
+          <div class="bbc"></div>
+        </div>
       </div>
     </div>
-    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/getNews.js"></script>
     <script src="js/options.js"></script>
   </body>
 </html>
