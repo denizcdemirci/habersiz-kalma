@@ -2,7 +2,7 @@ chrome.storage.local.get(function(r) {
   if (typeof r.a == 'undefined') {
     localStorage.clear();
     $('.background-gradient').css('opacity', '1');
-    var a = [{'t': 'Eklentiyi yüklediğin için teşekkürler', 'd': 'Eklentiyi ilk kez kullanacağın için öncelikle bir haber kaynağı seçerek başlayabilirsin.'}]
+    var a = [{'t': 'Eklentiyi yüklediğiniz için teşekkürler', 'd': 'Eklentiyi ilk kez kullanacağınız için öncelikle bir haber kaynağı seçerek işe başlayabilirsiniz.'}]
     $('.article footer').hide();
     $('.source-options').show();
   }

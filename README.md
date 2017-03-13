@@ -13,6 +13,8 @@ Bu eklenti ile açtığınız her yeni sekmede karşınıza seçtiğiniz haber k
 
 ### Güncelleme Geçmişi
 
+* **3.0.1**
+  * Küçük hatalar giderildi.
 * **3.0**
   * Tasarımsal yenilikler yapıldı. Sekme sayfası yeniden tasarlandı.
   * Ayarlar sayfası kaldırıldı. Ayarlarınızı sekme sayfasından yapabilirsiniz.

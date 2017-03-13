@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Habersiz Kalma",
-  "version": "3.0",
+  "version": "3.0.1",
   "description": "Açtığınız her sekmede yeni bir haber ile karşılaşacak, Türkiye gündeminden habersiz kalmayacaksınız.",
   "icons": {
     "16": "img/icon16.png",
@@ -17,5 +17,6 @@
   "minimum_chrome_version": "20",
   "offline_enabled": true,
   "permissions": ["storage", "http://*.hurriyet.com.tr/*", "http://*.ntv.com.tr/*", "http://*.cnnturk.com/*", "http://*.bbci.co.uk/*"],
+  "short_name": "Habersiz Kalma",
   "update_url": "https://clients2.google.com/service/update2/crx"
 }
