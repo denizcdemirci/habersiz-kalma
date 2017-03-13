@@ -1,20 +1,85 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>Habersiz Kalma</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/master.min.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-      <div class="article"></div>
+    <div class="background">
+      <div class="background-image"></div>
+      <div class="background-gradient"></div>
     </div>
-    <div class="options-button">
-      <a href="options.html">
-        <img src="img/options.png" title="Seçenekler">
-      </a>
+    <article class="article">
+      <h1 class="title"></h1>
+      <p class="description"></p>
+      <footer></footer>
+    </article>
+    <div class="source-options">
+      <div class="col">
+        <div class="image">
+          <img src="img/hur.png">
+        </div>
+        <div class="hur"></div>
+      </div>
+      <div class="col">
+        <div class="image">
+          <img src="img/ntv.png">
+        </div>
+        <div class="ntv"></div>
+      </div>
+      <div class="col">
+        <div class="image">
+          <img src="img/cnn.png">
+        </div>
+        <div class="cnn"></div>
+      </div>
+      <div class="col">
+        <div class="image">
+          <img src="img/bbc.png">
+        </div>
+        <div class="bbc"></div>
+      </div>
     </div>
-    <script src="js/jquery.js"></script>
-    <script src="js/index.js"></script>
+    <div class="options">
+      <div class="form-group">
+        <label>
+          <input type="checkbox" name="image" checked>
+          <span></span>
+          Haber görsellerini yükle
+        </label>
+      </div>
+      <div class="form-group">
+        <label>
+          <input type="checkbox" name="background" checked>
+          <span></span>
+          Sekme arka planını renkli yap
+        </label>
+      </div>
+      <div class="form-group">
+        <a href="https://github.com/denizcdemirci/habersiz-kalma/issues">Eğer bir hata ile karşılaşırsanız lütfen bize bildirin</a>
+      </div>
+    </div>
+    <div class="band">
+      <div class="band-logo">
+        <img class="logo" src="img/logo.svg">
+        <span>Habersiz Kalma</span>
+      </div>
+      <div class="band-navigation">
+        <ul>
+          <li class="saved">
+            <p>Değişiklikler bir sonraki sekme açışınızda uygulanacaktır</p>
+          </li>
+          <li>
+            <img class="source-logo" src="img/undefined.png" title="Haber Kaynağı">
+          </li>
+          <li>
+            <img class="options-button" src="img/options.png" title="Seçenekler">
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>

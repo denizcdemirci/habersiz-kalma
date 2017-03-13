@@ -1,23 +1,21 @@
 {
   "manifest_version": 2,
   "name": "Habersiz Kalma",
-  "short_name": "Habersiz Kalma",
-  "version": "2.0",
+  "version": "3.0",
   "description": "Açtığınız her sekmede yeni bir haber ile karşılaşacak, Türkiye gündeminden habersiz kalmayacaksınız.",
-  "author": "Deniz Çağın Demirci",
   "icons": {
     "16": "img/icon16.png",
     "48": "img/icon48.png",
     "128": "img/icon128.png"
   },
+  "background": {
+     "scripts": ["js/jquery.min.js", "js/main.min.js", "js/update.min.js"]
+  },
   "chrome_url_overrides": {
     "newtab": "index.html"
   },
-  "background": {
-     "scripts": ["js/jquery.js", "js/getNews.js", "js/background.js"]
-  },
+  "minimum_chrome_version": "20",
   "offline_enabled": true,
-  "options_page": "options.html",
   "permissions": ["storage", "http://*.hurriyet.com.tr/*", "http://*.ntv.com.tr/*", "http://*.cnnturk.com/*", "http://*.bbci.co.uk/*"],
   "update_url": "https://clients2.google.com/service/update2/crx"
 }
