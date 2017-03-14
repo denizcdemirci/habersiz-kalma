@@ -13,14 +13,14 @@ Bu eklenti ile açtığınız her yeni sekmede karşınıza seçtiğiniz haber k
 
 ### Güncelleme Geçmişi
 
-* **3.0.1**
+* **3.0.1 - 3.0.2**
   * Küçük hatalar giderildi.
 * **3.0**
   * Tasarımsal yenilikler yapıldı. Sekme sayfası yeniden tasarlandı.
   * Ayarlar sayfası kaldırıldı. Ayarlarınızı sekme sayfasından yapabilirsiniz.
 * **2.0**
   * Haber gösterilen sayfaya seçenekler tuşu eklendi.
-  * Haberler her sekmeyi açtığnızda değil, 30 dakikada bir güncelleniyor.
+  * Artık haberler 30 dakikada bir güncelleniyor.
   * Haber kaynağını değiştirme seçenekleri eklendi.
   * Düzgün çalışmayan seçenekler kaldırıldı.
   * Diğer küçük düzenlemeler.

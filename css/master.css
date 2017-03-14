@@ -276,6 +276,7 @@ body {
   bottom: 65px;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 2px;
+  border-bottom-right-radius: 0px;
   z-index: 3;
   display: none;
 }
@@ -414,14 +415,16 @@ body {
   margin-left: 0px;
 }
 
+.band .band-navigation ul li img {
+  vertical-align: middle;
+}
+
 .band .band-navigation ul li img.source-logo {
   width: 70px;
-  vertical-align: middle;
   cursor: pointer;
 }
 
 .band .band-navigation ul li img.options-button {
   width: 20px;
-  vertical-align: middle;
   cursor: pointer;
 }
