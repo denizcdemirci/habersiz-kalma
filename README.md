@@ -4,7 +4,7 @@ Açtığınız her sekmede yeni bir haber ile karşılaşacak, Türkiye gündemi
 
 Eklentiyi Chrome Web Store'dan indirebilirsiniz: https://chrome.google.com/webstore/detail/habersiz-kalma/ojlmnblnndgpdmggodkenhcoioeachie
 
-Eklentinin demosu: http://denizcag.in/habersiz-kalma/
+Eklentinin tanıtım sayfası: https://denizcag.in/habersiz-kalma
 
 ![Eklentiden Görüntü](http://i.imgur.com/Dj9q0As.png)
 
@@ -13,6 +13,10 @@ Bu eklenti ile açtığınız her yeni sekmede karşınıza seçtiğiniz haber k
 
 ### Güncelleme Geçmişi
 
+* **3.1**
+  * Yeni seçenekler eklendi.
+  * Küçük düzenlemeler yapıldı.
+  * jQuery sürümü güncellendi.
 * **3.0.1 - 3.0.2**
   * Küçük hatalar giderildi.
 * **3.0**
@@ -44,4 +48,4 @@ Habersiz Kalma eklentisi MIT lisansı altında dağıtılmaktadır. Lisans içer
 
 ### Yazar
 
-Copyright (C) 2017 Deniz Çağın Demirci <merhaba@denizcag.in>
+Copyright (c) 2017 Deniz Çağın Demirci <merhaba@denizcag.in>
